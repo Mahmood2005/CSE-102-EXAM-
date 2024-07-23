@@ -1,0 +1,8 @@
+2. Array - An array is a way to organize and store multiple items of the same kind in a specific order.
+
+ Array Methods -
+  i. push() - Adds one or more elements to the end of an array and returns the new length of the array.
+  ii. pop() - Removes the last element from an array and returns that element.
+  iii. shift() -  Removes the first element from an array and returns that element.
+  iv. splice() -  Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+  v. unshift() - Adds one or more elements to the beginning of an array and returns the new length of the array.

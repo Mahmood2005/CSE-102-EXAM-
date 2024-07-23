@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <Script>
+        function calculate(numbers) {
+    if (numbers.length === 0) {
+        return {
+            min: undefined,
+            max: undefined,
+            sum: 0,
+            avg: undefined
+        };
+    }
+
+    var min = numbers[0];
+    var max = numbers[0];
+    var sum = 0;
+
+    for (var number of numbers) {
+        if (number < min) {
+            min = number;
+        }
+        if (number > max) {
+            max = number;
+        }
+        sum += number;
+    }
+
+    var avg = sum / numbers.length;
+
+    return {
+        min: min,
+        max: max,
+        sum: sum,
+        avg: avg
+    };
+}
+
+// Example usage:
+var numbers = [29, 13, 75, 100, 98, 8, 4];
+var stats = calculate(numbers);
+
+console.log("Minimum number:", stats.min);
+console.log("Maximum number:", stats.max); 
+console.log("Sum of numbers:", stats.sum); 
+console.log("Average number:", stats.avg.toFixed(3));
+
+
+    </Script>
+</body>
+</html>
